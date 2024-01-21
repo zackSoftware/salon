@@ -1,0 +1,1654 @@
+@import url('https://fonts.googleapis.com/css2?family=Basic&family=Chau+Philomene+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cherish&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&display=swap');
+@font-face {
+  font-family: portersans;
+  src: url('./assets/portersans.otf')
+}
+
+@font-face {
+  font-family: segoe;
+  src: url('./assets//segoe.ttf');
+}
+
+body {
+	margin: 0;
+  overflow: hidden;
+}
+
+.NotificationsContainer {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  transition:all 0.2s;
+  background-color: rgba(0, 0, 0, 0.452)
+}
+
+
+.MainPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.Main {
+  position: relative;
+  height: 53vh;
+  width: 47vw;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 0.4rem;
+  border: 0.1vw solid #31313118;
+
+
+}
+
+.Main > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 53vh;
+  width: 25vw;
+  margin-left: -0.9vw;
+}
+
+.Main > div > div {
+  /* padding-left: 2.1vw; */
+}
+
+.Main > div > .Header {
+  margin-left: 5vw;
+  padding-top: 3.5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.4vh;
+  width: 100%;
+
+}
+
+
+
+.Line {
+  margin-top: 1vh;
+  width: 102%;
+  height: 0.2vh;
+  background: linear-gradient(90deg, rgba(193,58,240,0.214) 0%, rgba(143,45,116,1) 50%, rgba(193,58,240,0.214) 100%);
+}
+
+
+.Main > div > .Header > h1 {
+  margin: 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-family: portersans;
+  color: #000000;
+  font-weight: 400;
+  font-size: 1.7vw;
+  text-align: left;
+}
+
+
+.Main > div > .Header > p {
+  margin: 0;
+  font-family: segoe;
+  font-weight: 600;
+  font-size: 0.78vw;
+  color: #766767CF;
+}
+
+.Main > div > .MainContent {
+  position: absolute;
+  top: 50%;
+
+  transform: translate(0% , -50%);
+  font-family: 'Chau Philomene One', sans-serif;
+  font-size: 2.1vw;
+  color: #00000089;
+}
+
+.Main > div > .MainButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 0.5vw;
+
+}
+
+.Main > div > .MainButtons > .MainButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3.5vh;
+  border-radius: 4vw;
+  width: 8vw;
+  background-color: #1C0412;
+  box-shadow: 0px 0px 10px 0px #8D51A3;
+  border: 0.1vw solid #8F2D74;
+  margin-bottom: 8vh;
+  transition: 0.2s all;
+  cursor: pointer;
+  
+}
+
+.Main > div > .MainButtons > .MainButton:hover {
+  transition: 0.2s all;
+  box-shadow: 0px 0px 12px 0px #8D51A3;
+  background-color: #2e061d;
+
+
+}
+.Main > div > .MainButtons > .MainButton > p {
+  text-align: center;
+  text-wrap: nowrap;
+  font-size: 0.4vw;
+  color: #8B1663;
+  font-family: 'Bai Jamjuree', sans-serif;
+  font-size: 0.60vw;
+}
+
+.Main > div > .interested {
+  position: absolute;
+  bottom: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  color: #BABABA99;
+  text-align: center;
+  font-size: 0.7vw;
+  padding-bottom: 1vh;
+  
+}
+
+.MainPage > .Side {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 11vw;
+  height: 15vh;
+  padding: 1vw;
+  margin-top:23.4vh;
+  margin-left: 12.4vw;
+  background-color: #150310;
+  border: 0.1vw solid #5A1660;
+  border-radius: 0.4vw;
+  box-shadow: 0px 0px 4px 3px #20001D inset;
+
+
+
+}
+
+.Close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  height: 2.5vw;
+  border-radius: 0.5rem;
+  width: 3vw;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.Close > p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: white;
+  font-size: 0.6vw;
+  margin-bottom: 2.7vh;
+  margin-right: 0.8vh;
+  cursor:pointer;
+}
+
+.MainPage > .Side > .SideText {
+  margin-top: -0.5vh;
+  font-family: 'Bai Jamjuree', sans-serif;
+  color: #A08A8A;
+  text-align: center;
+  font-size: 0.7vw;
+  font-weight: 600;
+}
+
+.MainPage > .Side > .SideImage > img {
+  margin-top: 2vh;
+  height: 5vw;
+  border: 0.2vw solid #631D8D;
+  width: 5vw;
+  border-radius: 10vw;
+}
+
+.ColorsChoose {
+
+  width: 15vw;
+  min-height: 14vh;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  border: 0.1px solid #313131;
+  border-radius: 0.9vw;
+  gap: 0.5vh;
+}
+
+.Apply {
+  width: 15vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ApplyInputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.9vh;
+} 
+
+.ApplyInputInside {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 0.4vh;
+}
+
+.ApplyInputInside > p {
+  font-family: 'Bai Jamjuree', sans-serif;
+  font-size: 0.65vw;
+  margin: 0;
+  font-weight: 700;
+  color: #535353;
+}
+
+.ApplyInputInside > input {
+  font-family: 'Bai Jamjuree', sans-serif;
+  width: 10.5vw;
+  height: 2.1vh;
+  background-color: rgba(0, 0, 0, 0.644);
+  outline: none;
+  border-radius: 0.4vw;
+  border: 0.1vw solid #313131;
+  color: #535353;
+  padding-left: 0.5vw;
+  font-size: 0.74vw;
+  font-weight: 600;
+}
+input {
+  font-family: 'Bai Jamjuree', sans-serif;
+  width: 10.5vw;
+  height: 2.1vh;
+  background-color: rgba(0, 0, 0, 0.644);
+  outline: none;
+  border-radius: 0.4vw;
+  border: 0.1vw solid #313131;
+  color: #535353;
+  padding-left: 0.5vw;
+  font-size: 0.74vw;
+  font-weight: 600;
+}
+
+select {
+  font-family: 'Bai Jamjuree', sans-serif;
+  width: 11.0vw;
+  height: 2.4vh;
+  background-color: rgba(0, 0, 0, 0.644);
+  outline: none;
+  border-radius: 0.4vw;
+  border: 0.1vw solid #313131;
+  color: #535353;
+  padding-left: 0.5vw;
+  font-size: 0.57vw;
+  font-weight: 600;
+}
+
+select > option {
+  box-shadow: 0px 0px 5px 0px #000000;
+  width: 50%;
+  color: white;
+  background-color: #313131;
+}
+
+
+.ColorsHeader {
+  padding-top: 1.1vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 1.5vw;
+}
+
+.ColorsHeader > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.27vw;
+}
+
+.CircleHeader {
+  height: 0.6vw;
+  width: 0.6vw;
+  background-color: transparent;
+  border: 0.11vw solid red;
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 10vw;
+  transition: all 0.2s;
+
+}
+
+.ColorsHeader > div > p {
+  text-transform: uppercase;
+  font-size: 0.6vw;
+  margin-top: 1.1vh;
+  color: #E2E2E299;
+}
+
+.Colors {
+  height: 100%;
+  width: 95%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+  padding-bottom: 1vh;
+  grid-row-gap: 0.4vh;
+}
+
+.colorDiv {
+  height: 1.5vw;
+  width: 1.5vw;
+  border-radius: 10vw;
+  background-color: yellow;
+  min-width: 1.5vw;
+}
+
+@keyframes slideIN {
+  0% {
+    opacity: 0;
+    margin-right: -19vw;
+  }
+  100% {
+    opacity: 100;
+    margin-right: 0vw;
+
+  }
+}
+
+@keyframes slideOUT {
+  0% {
+    opacity: 100;
+    margin-right: 0;
+  }
+  100% {
+    opacity: 0;
+    margin-right: -19vw;
+
+  }
+}
+
+.Notify {
+  transition: 0.2s all;
+  opacity: 0;
+  font-family: 'Bai Jamjuree', sans-serif;
+  font-weight: 600;
+  color: #868686;
+  font-size: 0.39vw;
+  position: relative;
+  height: 5vh;
+  width: 13vw;
+  background-color: #150310;
+  display: flex;
+  justify-content: start;
+  border-radius: 0.3vw;
+  align-items: center;
+  margin-right: -15vw;
+  border: 0.1vw solid #61104a6b;
+  box-shadow: 0px 0px 4px 3px #20001d8e;
+  animation: slideIN 0.4s forwards ease-in-out;
+}
+
+.notifications {
+  top: 1;
+  right: 0;
+  margin-right: 1vw;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5vh;
+}
+
+.Notify > img {
+  height: 1.9vw;
+  margin-left: 0.3vw;
+}
+
+.bookedList {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-bottom: -0.5vh;
+  margin-right: 9vw;
+
+  height: 42vh;
+  width: 16vw;
+  border-radius: 0.4vw;
+  background-color: #0F0F0F; 
+  border: 0.12vw solid #313131;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 1vh;
+}
+
+.bookedList > .bookedHeader {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.1vh;
+  margin: 0;
+
+  width: 100%;
+  text-align: center;
+  font-family: portersans;
+  font-size: 0.50vw;
+  text-transform: uppercase;
+  margin-top: 1.5vh;
+  text-wrap: nowrap;
+  color: #ee09bc94;
+  font-weight: 400;
+}
+
+.bookedList > .bookedHeader > img {
+  height: 7vw;
+
+}
+
+.bookedList > .bookedHeader > p {
+  font-family: 'Bai Jamjuree';
+  font-size: 0.5vw;
+  font-weight: 600;
+  color: #5E5E5E;
+}
+
+.BOOKLIST {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.booklistItem {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
+
+  width: 75%;
+  height: 3vh;
+  min-height: 3vh;
+  border-radius: 1.5vw;
+  border: 0.1vw solid #313131;
+}
+
+.booklistItem > p {
+  font-family: 'Bai Jamjuree';
+  color: white;
+  font-size: 0.7vw;
+  margin-left: 0.3vw;
+}
+
+.booklistButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 0.4vw;
+}
+
+.booklistButtons > button {
+  background-color: #3B803A;
+  color: black;
+  text-transform: uppercase;
+  border: 0.1vw solid #5E5E5E;
+  border-radius: 1.8vw;
+  font-size: 0.5vw;
+  padding: 0.2vw;
+  padding-left: 0.3vw;
+  padding-right: 0.3vw;
+  font-family: 'Bai Jamjuree';
+  font-weight: bold;
+}
+
+.BOOKLIST {
+  overflow: auto;
+  z-index: 9;
+  padding-bottom: 0.9vh;
+  gap: 0.9vh;
+}
+
+.listBotttomButtons {
+  padding-top: 0.7vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5vw;
+  padding-bottom: 0.4vh;
+}
+
+.listBotttomButtons > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 3vh;
+  width: 5vw;
+  background-color: #0E220D;
+  border-radius: 0.5vw;
+  box-shadow: 0px 0px 6px 0px #15950A;
+  border: 0.1vw solid #3B803A;
+
+}
+
+.listBotttomButtons > div > p {
+  font-family: Bai Jamjuree;
+  font-weight: bold;
+  font-size: 0.6vw;
+  color: #3B803A;
+  
+}
+
+.listBotttomButtons > div:last-child > p {
+  color: #7C3232;
+
+}
+.listBotttomButtons > div:last-child {
+  background-color: #1C0404;
+  border: 0.1vw solid #8F2D2D;
+  box-shadow: 0px 0px 2px 0px #FF0000;
+
+}
+
+
+.DialogPOP {
+  position: relative;
+  height: 9.8vw;
+  transition: 0.1s all ;
+  opacity: 100;
+}
+
+#dialogS {
+  position: absolute;
+  margin-left: -37.6vw;
+  margin-top: 7vh;
+  height: 9.8vw;
+  transition: 0.1s all ;
+  opacity: 0;
+}
+
+.DescribeDialog {
+  color: #DADADA;
+  font-size: 0.9vw;
+  font-family: Bai Jamjuree;
+  z-index: 9;
+  margin-top: 1.8vh;
+  margin-left: 1vw;
+  width: 50%;
+}
+
+::-webkit-scrollbar {
+  width: 0.1vw;
+}
+
+::-webkit-scrollbar-track {
+  background: #242424; 
+  margin-left: 2vw;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #EE09BC; 
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+.ApplyNailsAndHair {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 8vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 2vw;
+}
+
+.Applyc {
+  width: 15vw;
+  height: 40vh;
+  background: linear-gradient(#00000030, #00000030) , url('./assets/backApply.png');
+  background-size: 115%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #00000010;
+  border-radius: 0.7vw;
+  border: 0.1vw solid #313131;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+} 
+
+.ApplycHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.1vh;
+}
+
+.ApplycHeader > h1 {
+  margin: 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-family: portersans;
+  color: #EE09BC90;
+  font-weight: 400;
+  white-space: nowrap;
+  font-size: 1.0vw;
+  text-align: left;
+}
+
+
+.slider {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5vh;
+}
+
+
+.slider > p {
+  margin: 0;
+  width: 100%;
+  margin-left: 3vw;
+  font-family: Bai Jamjuree;
+  color: #5E5E5E;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.6vw;
+}
+
+.slider > div {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 0.5vw;
+
+}
+
+.arrowButton {
+  height: fit-content;
+  width: fit-content;
+  border-radius: 0.4vw;
+  z-index: 9;
+}
+
+.arrowButton > img {
+  height: 1.2vw;
+}
+
+.sliderElem {
+  width: 15vw;
+  border-radius: 0.4vw;
+  height: 0.3vh;
+  background-color: #FFFFFF30;
+}
+
+.sliderAm{
+  transition: all 0.2s ;
+  position: relative;
+  left: 0;
+  height: 90%;
+  border-radius: 0.4vw;
+  width: 80%;
+  background-color: #8F2D74;
+}
+
+.sliderElem > p {
+  position: absolute;
+  top: 0;
+  left: 1;
+  font-family: Bai Jamjuree;
+  color: #5E5E5E;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.6vw;
+
+  margin-left: 3.5vw;
+  margin-top: 1vh;
+}
+
+.ApplyBUTTON {
+  margin-top: 0.6vh;
+  margin-bottom: 2vh;
+  width: 50%;
+  height:2.5vh;
+  box-shadow: 0px 0px 10px 0px #8D51A3;
+  border-radius: 0.8vw;
+  background-color: #1C0412;
+
+  font-family: Bai Jamjuree;
+  color: #941862;
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 0.5vw;
+  text-align: center;
+  border: 0.1vw solid #8F2D74;
+  align-items: center;
+  cursor: pointer;
+  z-index: 9;
+  transition: 0.2s all;
+
+}
+
+.ApplyBUTTON:hover {
+  transition: 0.2s all;
+  box-shadow: 0px 0px 15px 0px #8D51A3;
+
+}
+
+.Applyc > .ColorsChoose > .Colors {
+  margin-top: 0.0vh;
+  gap: 0.4vh;
+  z-index: 9;
+  overflow: auto;
+}
+
+.colorDiv{
+  cursor: pointer;
+}
+
+.Shop{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(#000000 , #34282850);
+}
+
+
+
+.ShopContainer{
+  border-radius: 0.5vw;
+  border: 0.1vw solid #313131;
+  height: 55.5vh;
+  width: 38vw;
+  background:#0F0F0F ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+}
+
+.ShopHeader {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ShopHeader > h1 {
+  text-align: center;
+  font-family: portersans;
+  font-size: 1.1vw;
+  text-transform: uppercase;
+  text-wrap: nowrap;
+  color: #ee09bc94;
+  font-weight: 400;
+  margin: 0;
+}
+
+.ShopD {
+  margin-top: 0.5vh;
+  display: flex;
+  height: 70%;
+  width: 95%;
+  border-radius: 0.5vw;
+  gap: 0.5vw;
+  /* border: 0.1vw solid #313131; */
+}
+
+.ShopItems {
+  padding: 0.5vw;
+  width: 58%;
+  height: 100%;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 0.7vw;
+  column-gap: 0.5vw;
+  overflow-x: hidden;
+  overflow-y: auto;
+  z-index: 9;
+  padding-right: 0.2vw;
+}
+
+.ShopItem {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+
+  min-width: 6vw;
+  width: 6vw;
+  height: 12vh;
+  border-radius: 0.8vw;
+  border: 0.1vw solid #313131;
+}
+
+.ShopItem > img {
+  height: 5vw;
+  padding-bottom: 1.5vh;
+}
+
+.ShopItem > p {
+  margin: 0;
+
+  margin-top: 1.5vh;
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.55vw;
+  color: #5E5E5E;
+  font-family: Bai Jamjuree;
+  text-transform: uppercase;
+}
+
+.shopCart {
+  position: relative;
+  width: 40%;
+  height: 100%;
+  border: 0.11vw solid #313131;
+  border-radius: 0.6vw;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+
+.shopCartItems {
+  position: relative;
+  padding-top: 0.9vh;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5vw;
+  height: 29vh;
+  max-height: 29vh;
+  overflow-y: auto;
+  z-index: 9;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.shopCartItem > .itemQ {
+  user-select: none;
+  margin-left: -0.4vw;
+  margin-top: -1.7vw;
+  position: absolute;
+
+
+  height: 1.2vw;
+  width: 1.2vw;
+  border-radius: 1.5vw;
+  background-color: #000000;
+  cursor: pointer;
+  z-index: 9;
+  border: 0.1vw solid #20001D;
+  box-shadow: 0px 0px 6px 0px #8B1663;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.itemQ > p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.shopCartItem {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  width: 85%;
+  height: 3.8vh;
+  min-height: 3.8vh;
+  z-index: 9;
+  border-radius: 1.5vw;
+  border: 0.11vw solid #313131;
+
+}
+
+.shopCartItem > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.shopCartItem > div > p {
+  height: 100%;
+  font-family: Bai Jamjuree;
+  font-weight: 600;
+  font-size: 0.50vw;
+  margin-left: 0.1vw;
+  color: #5E5E5E;
+  text-transform: uppercase;
+}
+.shopCartItem > div > img {
+  height: 1.7vw;
+  margin-left: 0.3vw;
+}
+
+.shopCartButtn {
+  margin-top: 1vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7vw;
+}
+
+.shopCartButtn > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 3vh;
+  width: 4.5vw;
+  background-color: #1C0404;
+  border: 0.1vw solid #8F2D2D;
+  border-radius: 0.4vw;
+  box-shadow: 0px 0px 10px 0px #7C3232;
+  transform: skewX(-7deg);
+  cursor: pointer;
+  z-index: 9;
+}
+
+.shopCartButtn> div > p {
+  font-family: Bai Jamjuree;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.6vw;
+  color: #7C3232;
+  transform: skewX(-7deg);
+
+}
+
+.cartButton {
+  user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  height: 1.2vw;
+  width: 1.2vw;
+  border-radius: 1.5vw;
+  background-color: #000000;
+  cursor: pointer;
+  z-index: 9;
+  border: 0.1vw solid #20001D;
+  box-shadow: 0px 0px 6px 0px #8B1663;
+}
+
+.cartButton > img {
+  width: 0.55vw;
+  min-width: 0.55vw;
+}
+
+.checked{
+  right: 0;
+  margin-top: -0.3vw;
+  margin-right: -0.2vw;
+
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1.2vw;
+  width: 1.2vw;
+  border-radius: 1.5vw;
+  background-color: #000000;
+  cursor: pointer;
+  z-index: 9;
+  border: 0.1vw solid #20001D;
+  box-shadow: 0px 0px 6px 0px #8B1663;
+}
+
+.checked > img {
+  height: 0.8vw;
+}
+
+.BusinessWarp {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.BusinessContainer {
+  position: relative;
+  height: 67vh;
+  width: 61.7vw;
+  background-color: #1b1b1b;
+  border-radius: 0.4vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 0.14vw solid #313131;
+}
+
+.SidebarContainer {
+  height: 100%;
+  width: 9.53vw;
+  background-color: #33333320;
+  border-radius: 0.4vw;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 0.4vw;
+}
+
+.HeaderImage {
+  margin-top: 1vh;
+}
+
+.HeaderImage svg {
+  height: 7.1vw;
+}
+
+
+.Insidebusiness {
+  height: 100%;
+  width: 51.5vw;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 3vh;
+ 
+}
+
+.SidebarButtons {
+  height: fit-content;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1vh;
+  z-index: 9;
+}
+
+.SidebarButtons > div {
+  width:7.6vw;
+  height: 2.7vh;
+  border-radius: 1vw;
+  box-shadow: 0px 0px 4px 0px #8F2D74;
+  background: linear-gradient(#000000, #121212);
+  border: 0.1vw solid #620949;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  gap: 0.55vw;
+  transition: all 0.2s;
+
+}
+.SidebarButtons > div:hover {
+  transition: all 0.2s;
+  box-shadow: 0px 0px 8px 0px #8F2D74; 
+}
+
+.SidebarButtons > div > p {
+  color: #6C6C6C;
+  font-size: 0.6vw;
+  width: 80%;
+  font-family: Acme;
+
+}
+
+.SidebarButtons > div > div {
+  width: 20%;margin-left: 0.7vw;display: flex
+}
+
+.BusinessHeader {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.BusinessHeader > p {
+  margin: 0;
+  margin-top: 3.5vh;
+  font-family: portersans;
+  color: #5E5E5E;
+  font-size: 1.25vw;
+}
+
+.BussinessStats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.1vw;
+  width: 90%;
+}
+
+.BussinessStats > .BusinessStatbox {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 0.6vw;
+  width: 9.79vw;
+  position: relative;
+  height: 12.5vh;
+  border-radius: 0.6vw;
+  background-color: hsl(0, 0%, 12%);
+  box-shadow: 0px 0.8500000238418579px 3px 0px #00000030;
+  box-shadow: 0px 0.25px 1px 0px #0000000A;
+
+}
+
+.BusinessStatbox > p{
+  font-family: Roboto;
+  color: white;
+  margin: 0;
+  margin-left: 0.8vw;
+  font-size: 0.7vw;
+}
+
+.BusinessStatbox > h1{
+  font-family: Roboto;
+  color: white;
+  margin: 0;
+  margin-left: 0.8vw;
+  font-size: 1.77vw;
+  font-weight: 400;
+  
+
+}
+/* 9.8vw */
+
+.checkIcon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0.4vw
+}
+
+
+.BusinessChart {
+  width: 90%;
+  height: 39vh !important;
+  background-color: #1E1E1E;
+  border-radius: 0.6vw;
+  box-shadow: 0px 0.8500000238418579px 3px 0px #00000030;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.ChartHeader {
+  width: 100%;
+  margin-left: 2vw;
+  display: flex;
+  justify-content: center;
+  align-items:left;
+  flex-direction: column;
+  gap: 0.3vw;
+}
+
+.ChartHeader p{
+  color: white;
+  font-size: 0.9vw;
+  font-family: Roboto;
+}
+
+.BusinessInsidePage {
+  position: relative;
+  width: 90%;
+  height: 55%;
+  background-color: #1E1E1E;
+  border-radius: 0.6vw;
+  box-shadow: 0px 0.8500000238418579px 3px 0px #00000030;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  font-family: Bai Jamjuree;
+  color: #CECECE;
+  gap: 1vw;
+  z-index: 9;
+}
+
+.Bbutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 3.7vh;
+  width: 7.5vw;
+  font-size: 0.7vw;
+  background-color: #0E220D;
+  border-radius: 0.5vw;
+  color: #3B803A;
+  box-shadow: 0px 0px 6px 0px #15950A;
+  border: 0.1vw solid #3B803A;
+  margin-top: 0.8vh;
+  cursor: pointer;
+  transition: all 0.3s;
+
+}
+
+.BusinessInsidePage > input {
+  width: 8.33vw;
+  border-radius: 0.5vw;
+  border: 1px solid #313131;
+  outline: none;
+  background-color: #00000010;
+  height: 2.4vh;
+  font-size: 0.62vw;
+  font-family: Bai Jamjuree;
+  padding-left: 0.7vw;
+  color: #CECECE;
+}
+.BusinessInsidePage > textarea {
+  padding-top: 0.8vh;
+  width: 7.8vw;
+  border-radius: 0.5vw;
+  border: 1px solid #313131;
+  outline: none;
+  background-color: #00000010;
+  height: 8.4vh;
+  font-size: 0.62vw;
+  font-family: Bai Jamjuree;
+  padding-left: 0.7vw;
+  padding-right: 0.7vw;
+  resize: none;
+  color: #A08A8A;
+}
+
+
+.Bbutton:hover {
+  transition: 0.3s all;
+  box-shadow: 0px 0px 10px 0px #15950A;
+
+}
+
+input[type='number'] {
+  -moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+
+
+
+.BusinessHeaderTitle {
+  position: absolute;
+  top: 0;
+  margin: 0;
+  margin-top: 0.5vh;
+  font-family: Cherish;
+  font-size: 3.3vw;
+  color: #302f2f9a;
+  
+}
+
+.EmployeesMng {
+  position: relative;
+  width: 80%;
+  height: 21vh;
+
+  display: flex;
+  flex-direction: row;
+  gap: 1vw;
+}
+
+.flexS {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.EmployeeList {
+
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.8vh;
+  height: 20vh;
+  max-height: 20vh;
+  width: 90%;
+  overflow-y: auto;
+  padding-right: 1vw;
+  overflow-x: hidden;
+  
+  padding-left: 0.8vw;
+}
+
+.EmployeeUser {
+  height: 3.3vh;
+  min-height: 3.3vh;
+  width: 100%;
+  background-color: #0000001A;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 0.1vw solid #313131;
+  border-radius: 0.8vw;
+  padding: 0.2vw;
+  padding-right: 0.5vw;
+}
+
+.EmployeeUser > span > p {
+  font-size: 0.7vw;
+  font-family: Bai Jamjuree;
+  font-size: 600;
+}
+
+.EmployeeUser > span > img {
+  width: 2vw;
+}
+
+.EmployeeUser > button {
+  font-family: Bai Jamjuree;
+  outline: none;
+  background-color: #FF00001A;
+  padding: 0.3vw;
+  color: #CECECE;
+  outline: none;
+  width: 3vw;
+  font-size: 0.57vw;
+  border: 0.1vw solid #313131;
+  border-radius: 0.7vw;
+  cursor: pointer;
+}
+
+.EmployeeUser > button:hover {
+  box-shadow: 0px 0px 8px 0px #313131;
+
+}
+
+.EmployeeUser > div > button {
+  font-family: Bai Jamjuree;
+  outline: none;
+  background-color: #FF00001A;
+  padding: 0.3vw;
+  color: #CECECE;
+  outline: none;
+  width: 3vw;
+  font-size: 0.57vw;
+  border: 0.1vw solid #313131;
+  border-radius: 0.7vw;
+  cursor: pointer;
+}
+
+.EmployeeUser > div > button:hover {
+  box-shadow: 0px 0px 8px 0px #313131;
+
+}
+
+.JobApplicationPop {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  z-index: 90;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  height: 35vh;
+  width: 20vw;
+  border-radius: 0.6vw;
+  background-color: #121212;
+}
+
+.JobApplicationPop > .Apply {
+  padding-bottom: 5vh;
+}
+
+.StocksUnderline {
+  padding-top: 2vh;
+  height: fit-content;
+  display: flex;
+  margin-top: 2vh;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 83%;
+}
+
+
+.GreenClass {
+  background-color: #9AE4A715 !important;
+}
+
+.GreenClass > p:last-child {
+  color: #9AE4A7 ;
+}
+
+.RedClass {
+  background-color: #EF8F8F15 !important;
+}
+
+.RedClass > p:last-child {
+  color: #EF8F8F ;
+}
+
+.ProgBar {
+
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-bottom: 4vh;
+  transform: translate(-50%);
+  width: 15vw;
+  height: 2.7vh;
+  border-radius: 5vw;
+  background-color: #292929;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: rgb(201, 201, 201);
+  font-family: 'Bai Jamjuree';
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.5s all;
+  
+}
+
+.ProgProg {
+  transition: 1s width linear;
+
+  position: absolute;
+  left: 0;
+  border-radius: 5vw;
+
+  z-index: -1;
+  height: 100%;
+  background: linear-gradient(90deg, #3E0070 1.86%, rgba(112, 0, 255, 0.94) 101%);
+
+}
+
+.RequiredItems {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 4vw;
+  width: 15.05vw;
+  height: 35.64vh;
+  background-color: #0F0F0F;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 0.1vw solid #313131;
+  border-radius: 0.4vw;
+}
+
+.RequiredItems > .ReqHeader {
+  margin-top: 2vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.RequiredItems > .ReqHeader > h1 {
+  margin: 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-family: portersans;
+  color: #EE09BC80;
+  white-space: nowrap;
+  font-weight: 400;
+  font-size: 0.9vw;
+  text-align: center;
+  margin-bottom: 0.5vh;
+}
+
+.RequiredItems > .ReqHeader  > p {
+  margin: 0;
+  font-family: segoe;
+  margin-top: 0.5vh;
+  font-weight: 600;
+  font-size: 0.52vw;
+  color: #766767CF;
+}
+
+.RequiredItemsList {
+  padding-top: 1vh;
+  position: relative;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.7vh;
+  width: 90%;
+  z-index: 9;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 19vh;
+  padding-top: 0.5vh !important;
+  padding: 1vw;
+}
+
+.ListItemReq { 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 3.5vh;
+  border: 0.1vw solid #313131;
+  border-radius: 0.4vw;
+  padding-left: 0.3vw;
+  padding-right: 0.3vw;
+
+  color: #FFFFFF;
+}
+
+.ListItemReq > div {
+  width: 3vw !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Bai Jamjuree;
+  font-size: 0.6vw;
+}
