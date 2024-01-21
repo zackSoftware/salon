@@ -117,7 +117,7 @@ if not Config.Target then
     end
 end
 
-if Config.Radial == 'qb' then
+if Config.Radial == 'qb' and Config.Core == 'qb' then
     function Framework:AddRadial()
         exports['qb-radialmenu']:AddOption({
             id = 'caddrugsales',
@@ -141,7 +141,7 @@ if Config.Radial == 'ox' then
     end
 end
 
-if Config.Dispatch == 'ps' then
+if Config.Dispatch == 'ps' and Config.Core == 'qb' then
     function Framework:PoliceAlert()
         exports['ps-dispatch']:DrugSale()
     end
@@ -187,6 +187,16 @@ if Config.Dispatch == 'custom' then
     function Framework:PoliceAlert()
         -- add your custom dispatch alert here
     end
+end
+if Config.Dispatch == 'esx' then
+    local ped = PlayerPedId()
+    local coords = GetEntityCoords(ped)
+    local dispatchData = {
+        message = 'Drug sale',
+        coords = coords,
+        street = GetStreetAndZone(coords)
+    }
+    TriggerServerEvent('esx:salon:server:notify', dispatchData)
 end
 
 function Framework:GetSellItems(zone)

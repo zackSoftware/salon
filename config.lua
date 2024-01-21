@@ -1,5 +1,5 @@
 Config = {}
-Config.Core = 'qb' -- qb / esx
+Config.Core = 'esx' -- qb / esx
 
 Config.Locations = {
     ['MainDesk'] = {vector3(72.975 , -1454.90 , 29.29)},
@@ -27,6 +27,9 @@ Config.Nails = {
     [3] = {CategoryID = 1 , ClothID = 16 }, 
 
 }
+
+Config.alertsMuted = false
+
 
 Config.RequiredItemsNpc = {
     ['Npc'] = {

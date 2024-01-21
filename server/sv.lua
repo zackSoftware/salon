@@ -697,7 +697,19 @@ end)
 if(Config.Core == 'esx') then
 
 
+    RegisterNetEvent('esx:salon:server:notify', function(data)
+        for _, v in pairs(ESX.GetPlayers()) do
+            local player = ESX.GetPlayerFromId(v)
+            if player then
+                if player.job.name == "police" then
+                    xPlayer.showNotification(data.msg .. ' Reported On '.. data.street)
+                    TriggerClientEvent('esx:salon:client:alertCops', data)
+                end
+            end
+        end
 
+        
+    end)
 
     ESX.RegisterServerCallback('SaloonS:PurchaseItem', function(source, cb, data)
         local xPlayer = ESX.GetPlayerFromId(source)
