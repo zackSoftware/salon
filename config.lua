@@ -100,14 +100,14 @@ Config.ShopItems = {
 --[THIS PART IS FOR THE SELLING THE ITEMS THEY PURCHASE FROM Config.RequiredItemsNpc USING /fsale IN GAME ]
 
 -- what inventory do you use?
-Config.Inventory = 'qb' -- 'qb', 'ps', 'ox'
+Config.Inventory = 'esx' -- 'qb', 'ps', 'ox', 'esx' -- Put 'esx' if you're using the defualt esx inventory
 
 
 Config.Debug= true 
 
 
 -- what target do you use?
-Config.Target = 'qb' -- 'qb', 'ox' (false: DrawText3D)
+Config.Target = 'ox' -- 'qb', 'ox' (false: DrawText3D)
 
 -- what radial menu do you use?
 Config.Radial = 'qb' -- 'qb', 'ox'

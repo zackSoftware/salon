@@ -85,20 +85,20 @@ if Config.Core == 'esx' then
         return true
     end
 
-    if not Config.Inventory == 'ox' or Config.Inventory == 'ps'then 
+    if Config.Inventory == 'esx' then 
         
         function Framework:AddItem(source, item, amount)
             local src = source
             local player = ESX.GetPlayerFromId(src)
             if player.canCarryItem(item, amount) then
-                return sourceXPlayer.addInventoryItem(item, amount)
+                return player.addInventoryItem(item, amount)
             end
         end
     
         function Framework:RemoveItem(source, item, amount)
             local src = source
             local player = ESX.GetPlayerFromId(src)
-            return sourceXPlayer.removeInventoryItem(item, amount)
+            return player.removeInventoryItem(item, amount)
         end
     
         function Framework:GetItem(source, item) 

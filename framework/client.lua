@@ -59,8 +59,27 @@ if Config.Inventory == 'ox' then
     end
 end
 
+if Config.Inventory == 'esx' then
+    local items = exports.ox_inventory:Items()
+
+    function Framework:GetItemLabel(item)
+        ESX.TriggerServerCallback('SaloonS:getItemLabel', function(itemLabel) 
+            if Config.Debug then print('Item label: ' .. itemLabel) end
+        return itemlabel
+        end, item)
+    end
+
+    function Framework:GetItemCount(item)
+        
+        local hasItem = ESX.SearchInventory(item, 1)
+        if Config.Debug then print('Item count: ' .. hasItem) end      
+		return hasItem
+    end
+end
+
 if Config.Target == 'ox' then
     function Framework:AddGlobalPed(options)
+        print(options)
         exports.ox_target:addGlobalPed(options)
     end
 

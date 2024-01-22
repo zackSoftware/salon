@@ -1262,4 +1262,9 @@ if(Config.Core == 'esx') then
             end)
         end
     end)
+
+    ESX.RegisterServerCallback('SaloonS:getItemLabel', function(source, cb, item)
+        local itemLabel = ESX.GetItemLabel(item)
+        cb(itemLabel)
+    end)
 end
