@@ -1,5 +1,5 @@
 Config = {}
-Config.Core = 'qb' -- qb / esx
+Config.Core = 'esx' -- qb / esx
 
 Config.Locations = {
     ['MainDesk'] = {vector3(72.975 , -1454.90 , 29.29)},
@@ -27,6 +27,9 @@ Config.Nails = {
     [3] = {CategoryID = 1 , ClothID = 16 }, 
 
 }
+
+Config.alertsMuted = false
+
 
 Config.RequiredItemsNpc = {
     ['Npc'] = {
@@ -97,14 +100,14 @@ Config.ShopItems = {
 --[THIS PART IS FOR THE SELLING THE ITEMS THEY PURCHASE FROM Config.RequiredItemsNpc USING /fsale IN GAME ]
 
 -- what inventory do you use?
-Config.Inventory = 'qb' -- 'qb', 'ps', 'ox'
+Config.Inventory = 'esx' -- 'qb', 'ps', 'ox', 'esx' -- Put 'esx' if you're using the defualt esx inventory
 
 
 Config.Debug= true 
 
 
 -- what target do you use?
-Config.Target = 'qb' -- 'qb', 'ox' (false: DrawText3D)
+Config.Target = 'ox' -- 'qb', 'ox' (false: DrawText3D)
 
 -- what radial menu do you use?
 Config.Radial = 'qb' -- 'qb', 'ox'

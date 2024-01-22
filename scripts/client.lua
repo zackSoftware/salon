@@ -266,7 +266,7 @@ RegisterNetEvent('cad-drugsales:toggleselling', function()
 	AllowedTarget = not AllowedTarget
 	if AllowedTarget then
 		createTarget()
-		print(Framework:GetCurrentJob())
+		print(Framework:GetCurrentJob().name)
 		
 		Framework:Notify("Enabled Selling")
 	else
@@ -275,7 +275,9 @@ RegisterNetEvent('cad-drugsales:toggleselling', function()
 	end
 end)
 
-Framework:AddRadial()
+if not Config.Core == 'esx' then 
+	Framework:AddRadial()
+end 
 
 RegisterCommand('fsale', function(source)
 	TriggerEvent("cad-drugsales:toggleselling")
