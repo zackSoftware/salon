@@ -152,7 +152,7 @@ Config.BlacklistPeds = {
 }
 
 -- The below option is for you to enable selling anywhere
-Config.SellAnywhere = false
+Config.SellAnywhere = true
 
 -- SellItems to be configured only if [Config.SellAnywhere = true]
 Config.SellItems = {
