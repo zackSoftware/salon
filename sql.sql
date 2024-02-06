@@ -5,7 +5,7 @@ CREATE TABLE IF NOT EXISTS `salon` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
-INSERT INTO `salon` (`booksList` , `businessData`) VALUES ('{}', '{}')
+INSERT INTO `salon` (id, `booksList` , `businessData`) VALUES (1, '{}', '{}');
 
 INSERT INTO `jobs` (`name`, `label`, `whitelisted`) VALUES ('salon', 'Salon', 0);
 
