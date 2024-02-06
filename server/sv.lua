@@ -1064,12 +1064,13 @@ if(Config.Core == 'esx') then
                         end                 
                     end
                 end
-
+                print('Submitting', xPlayer.getName())
                 data.identifier = license
                 data.accepted = 'none'
                 data.name = xPlayer.getName()
                 table.insert(booksList , data)
                 exports["oxmysql"]:execute('UPDATE salon SET booksList = @job WHERE id = 1', {['@job'] = json.encode(booksList)}, function(n)
+                    print(json.encode(booksList))
                 end)
                 cb({})
 
